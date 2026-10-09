@@ -1,6 +1,6 @@
 # Receding-Horizon BESS Dispatch Controller
 
-A model-predictive control (MPC) backtest for dispatching a battery on a hybrid wind-solar plant that sells into fixed-tariff PPAs and a spot exchange. Every hour the controller solves a 48-hour linear programme, commits only the first hour, updates its state, and re-solves. A one-shot, whole-year perfect-foresight solve provides an upper bound on achievable revenue.
+A model-predictive control (MPC) backtest for dispatching a battery on a hybrid wind-solar plant that sells into fixed-tariff PPAs and a spot exchange. Every hour the controller solves a 48-hour linear programme, commits only the first hour, updates its state, and re-solves. A whole-year perfect-foresight solve provides an upper bound on achievable revenue.
 
 Built with Python, [Pyomo](https://www.pyomo.org/) and [HiGHS](https://highs.dev/).
 
